@@ -25,9 +25,11 @@ final class MainVC: UIViewController {
         stackView.spacing = 10
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
+        stackView.addArrangedSubview(tableViewButton)
         return stackView
     }()
     
+    private lazy var tableViewButton: UIButton = buttonClourse("fakeTableView")
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -43,7 +45,8 @@ final class MainVC: UIViewController {
     private
     func didTap(button: UIButton) {
         switch button {
-
+        case tableViewButton:
+            navigationController?.pushViewController(FakeTableVC(), animated: true)
         default:
             break
         }
