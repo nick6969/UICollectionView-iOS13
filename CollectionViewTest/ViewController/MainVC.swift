@@ -26,10 +26,13 @@ final class MainVC: UIViewController {
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
         stackView.addArrangedSubview(tableViewButton)
+        stackView.addArrangedSubview(basicButton)
         return stackView
     }()
     
     private lazy var tableViewButton: UIButton = buttonClourse("fakeTableView")
+    private lazy var basicButton: UIButton = buttonClourse("basic collectionview")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -47,6 +50,8 @@ final class MainVC: UIViewController {
         switch button {
         case tableViewButton:
             navigationController?.pushViewController(FakeTableVC(), animated: true)
+        case basicButton:
+            navigationController?.pushViewController(BasicCollectionVC(), animated: true)
         default:
             break
         }

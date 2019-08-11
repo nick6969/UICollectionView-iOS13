@@ -13,6 +13,7 @@
 		0180628C22F75C9D0062B10F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180628B22F75C9D0062B10F /* MainVC.swift */; };
 		01934C3F23000F44005196B7 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01934C3E23000F44005196B7 /* TextCollectionViewCell.swift */; };
 		01934C4223001104005196B7 /* FakeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01934C4123001104005196B7 /* FakeTableVC.swift */; };
+		01934C44230012DD005196B7 /* BasicCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01934C43230012DD005196B7 /* BasicCollectionVC.swift */; };
 		019EC81922FF540E001DB199 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EC81822FF540E001DB199 /* UICollectionViewExtension.swift */; };
 		3B02F4F072B3D0182B290160 /* Pods_CollectionViewTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C4445EABDF265168ECAAC5 /* Pods_CollectionViewTest.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		0180628B22F75C9D0062B10F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		01934C3E23000F44005196B7 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		01934C4123001104005196B7 /* FakeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTableVC.swift; sourceTree = "<group>"; };
+		01934C43230012DD005196B7 /* BasicCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionVC.swift; sourceTree = "<group>"; };
 		019EC81822FF540E001DB199 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		5B3D5F651CD4B858BD6429EC /* Pods-CollectionViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewTest.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewTest/Pods-CollectionViewTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA81B51FFA0065E9662DD35 /* Pods-CollectionViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewTest.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewTest/Pods-CollectionViewTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		0180628D22F75CAB0062B10F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				01934C43230012DD005196B7 /* BasicCollectionVC.swift */,
 				01934C4123001104005196B7 /* FakeTableVC.swift */,
 				0180628B22F75C9D0062B10F /* MainVC.swift */,
 			);
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0180627922F75C550062B10F /* AppDelegate.swift in Sources */,
+				01934C44230012DD005196B7 /* BasicCollectionVC.swift in Sources */,
 				01934C4223001104005196B7 /* FakeTableVC.swift in Sources */,
 				0180628C22F75C9D0062B10F /* MainVC.swift in Sources */,
 				01934C3F23000F44005196B7 /* TextCollectionViewCell.swift in Sources */,
