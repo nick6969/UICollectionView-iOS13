@@ -1,16 +1,35 @@
 PODS:
+  - Alamofire (4.8.1)
+  - CHLMVP (0.1.2)
   - mLayout (0.1.6)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
 
 DEPENDENCIES:
+  - Alamofire (= 4.8.1)
+  - CHLMVP (= 0.1.2)
   - mLayout (= 0.1.6)
+  - Moya (= 13.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CHLMVP
     - mLayout
+    - Moya
+    - Result
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  CHLMVP: 1efc5ca27111a1554a2abc8f9da67741a509106a
   mLayout: 1e847667c246592dfc2fb2cad6cc9e9dc58219cc
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: 16cb6ef58d9e0d0d51bcbace5158a6bd1ba15bc7
+PODFILE CHECKSUM: 6c6ac9937594a779938982d29ffd30abc15336b3
 
 COCOAPODS: 1.7.2

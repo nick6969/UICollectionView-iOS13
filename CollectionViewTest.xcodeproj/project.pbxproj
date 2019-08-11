@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0175A4E723004498008E1ADD /* MoyaProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4E623004498008E1ADD /* MoyaProviderExtension.swift */; };
+		0175A4EB23004521008E1ADD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4EA23004521008E1ADD /* WebService.swift */; };
 		0180627922F75C550062B10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180627822F75C550062B10F /* AppDelegate.swift */; };
 		0180628022F75C550062B10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0180627F22F75C550062B10F /* Assets.xcassets */; };
 		0180628322F75C550062B10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180628122F75C550062B10F /* LaunchScreen.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0175A4E623004498008E1ADD /* MoyaProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaProviderExtension.swift; sourceTree = "<group>"; };
+		0175A4EA23004521008E1ADD /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		0180627522F75C550062B10F /* CollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0180627822F75C550062B10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0180627F22F75C550062B10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0175A4E82300450E008E1ADD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0175A4E923004514008E1ADD /* WebService */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0175A4E923004514008E1ADD /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				0175A4EA23004521008E1ADD /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		0180626C22F75C550062B10F = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				019EC81722FF53F7001DB199 /* Extension */,
+				0175A4E82300450E008E1ADD /* Manager */,
 				0180628A22F75C690062B10F /* Support */,
 				01934C4823001E55005196B7 /* Tools */,
 				01934C3C23000F30005196B7 /* UICollectionView */,
@@ -140,6 +161,7 @@
 		019EC81722FF53F7001DB199 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0175A4E623004498008E1ADD /* MoyaProviderExtension.swift */,
 				019EC81822FF540E001DB199 /* UICollectionViewExtension.swift */,
 			);
 			path = Extension;
@@ -301,8 +323,10 @@
 				01934C4A23001E65005196B7 /* CVLayout.swift in Sources */,
 				01934C4223001104005196B7 /* FakeTableVC.swift in Sources */,
 				0180628C22F75C9D0062B10F /* MainVC.swift in Sources */,
+				0175A4E723004498008E1ADD /* MoyaProviderExtension.swift in Sources */,
 				01934C3F23000F44005196B7 /* TextCollectionViewCell.swift in Sources */,
 				019EC81922FF540E001DB199 /* UICollectionViewExtension.swift in Sources */,
+				0175A4EB23004521008E1ADD /* WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

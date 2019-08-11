@@ -8,5 +8,8 @@ target 'CollectionViewTest' do
   use_frameworks!
 
   pod 'mLayout', '0.1.6'
-  
+  pod 'CHLMVP', '0.1.2'
+  pod 'Moya', '13.0.1'
+  pod 'Alamofire', '4.8.1'
+
 end
