@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseCollectionVC<SectionModelType, ModelType>: UIViewController where SectionModelType: Hashable, ModelType: Hashable {
+class BaseCollectionVC<SectionModelType, CellModelType>: UIViewController where SectionModelType: Hashable, CellModelType: Hashable {
     
     private
     lazy var collectionView: UICollectionView = {
@@ -17,7 +17,7 @@ class BaseCollectionVC<SectionModelType, ModelType>: UIViewController where Sect
         return collectionView
     }()
     
-    var dataSource: UICollectionViewDiffableDataSource<SectionModelType, ModelType>!
+    var dataSource: UICollectionViewDiffableDataSource<SectionModelType, CellModelType>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +45,8 @@ class BaseCollectionVC<SectionModelType, ModelType>: UIViewController where Sect
     }
     
     private
-    func snapshotForCurrentState() -> NSDiffableDataSourceSnapshot<SectionModelType, ModelType> {
-        let snapost = NSDiffableDataSourceSnapshot<SectionModelType, ModelType>()
+    func snapshotForCurrentState() -> NSDiffableDataSourceSnapshot<SectionModelType, CellModelType> {
+        let snapost = NSDiffableDataSourceSnapshot<SectionModelType, CellModelType>()
         let sectionIdentifiters = getDataSectionIdentifiters()
         snapost.appendSections(sectionIdentifiters)
         for identifiter in sectionIdentifiters {
@@ -69,13 +69,12 @@ class BaseCollectionVC<SectionModelType, ModelType>: UIViewController where Sect
     }
     
     /// Can override this method to setup supplementaryView
-    func getSupplementaryViewProvider()
-        -> UICollectionViewDiffableDataSource<SectionModelType, ModelType>.SupplementaryViewProvider? {
-            return nil
+    func getSupplementaryViewProvider() -> ((UICollectionView, String, IndexPath) -> UICollectionReusableView?)? {
+        return nil
     }
     
     /// Can override this method to setup cell
-    func getCellProvider() -> UICollectionViewDiffableDataSource<SectionModelType, ModelType>.CellProvider {
+    func getCellProvider() -> (UICollectionView, IndexPath, CellModelType) -> UICollectionViewCell? {
         return { _, _, _ in return nil }
     }
     
@@ -85,7 +84,7 @@ class BaseCollectionVC<SectionModelType, ModelType>: UIViewController where Sect
     }
     
     /// Can Override this method to set how many items in the section
-    func getDataModels(with section: SectionModelType) -> [ModelType] {
+    func getDataModels(with section: SectionModelType) -> [CellModelType] {
         return []
     }
 }

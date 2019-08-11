@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0175A4E723004498008E1ADD /* MoyaProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4E623004498008E1ADD /* MoyaProviderExtension.swift */; };
 		0175A4EB23004521008E1ADD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4EA23004521008E1ADD /* WebService.swift */; };
+		0175A4ED2300480F008E1ADD /* SectionScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4EC2300480F008E1ADD /* SectionScrollVC.swift */; };
+		0175A4EF23004D13008E1ADD /* ScrollSection.json in Resources */ = {isa = PBXBuildFile; fileRef = 0175A4EE23004D13008E1ADD /* ScrollSection.json */; };
+		0175A4F223004DCB008E1ADD /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4F123004DCB008E1ADD /* ContentModel.swift */; };
+		0175A4F423004E67008E1ADD /* Type01Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4F323004E67008E1ADD /* Type01Model.swift */; };
+		0175A4F623004E88008E1ADD /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4F523004E88008E1ADD /* Api.swift */; };
+		0175A4F823004FB5008E1ADD /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4F723004FB5008E1ADD /* TypeModel.swift */; };
+		0175A4FA23005560008E1ADD /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4F923005560008E1ADD /* ImageCollectionViewCell.swift */; };
+		0175A4FF23005D7A008E1ADD /* SectionScrollPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175A4FE23005D7A008E1ADD /* SectionScrollPresenter.swift */; };
 		0180627922F75C550062B10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180627822F75C550062B10F /* AppDelegate.swift */; };
 		0180628022F75C550062B10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0180627F22F75C550062B10F /* Assets.xcassets */; };
 		0180628322F75C550062B10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180628122F75C550062B10F /* LaunchScreen.storyboard */; };
@@ -26,6 +34,14 @@
 /* Begin PBXFileReference section */
 		0175A4E623004498008E1ADD /* MoyaProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaProviderExtension.swift; sourceTree = "<group>"; };
 		0175A4EA23004521008E1ADD /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		0175A4EC2300480F008E1ADD /* SectionScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionScrollVC.swift; sourceTree = "<group>"; };
+		0175A4EE23004D13008E1ADD /* ScrollSection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ScrollSection.json; sourceTree = "<group>"; };
+		0175A4F123004DCB008E1ADD /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		0175A4F323004E67008E1ADD /* Type01Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type01Model.swift; sourceTree = "<group>"; };
+		0175A4F523004E88008E1ADD /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0175A4F723004FB5008E1ADD /* TypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
+		0175A4F923005560008E1ADD /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		0175A4FE23005D7A008E1ADD /* SectionScrollPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionScrollPresenter.swift; sourceTree = "<group>"; };
 		0180627522F75C550062B10F /* CollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0180627822F75C550062B10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0180627F22F75C550062B10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,9 +83,28 @@
 		0175A4E923004514008E1ADD /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				0175A4F523004E88008E1ADD /* Api.swift */,
 				0175A4EA23004521008E1ADD /* WebService.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		0175A4F023004D18008E1ADD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0175A4F123004DCB008E1ADD /* ContentModel.swift */,
+				0175A4F323004E67008E1ADD /* Type01Model.swift */,
+				0175A4F723004FB5008E1ADD /* TypeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0175A4FD23005D6F008E1ADD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0175A4FE23005D7A008E1ADD /* SectionScrollPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		0180626C22F75C550062B10F = {
@@ -95,6 +130,8 @@
 			children = (
 				019EC81722FF53F7001DB199 /* Extension */,
 				0175A4E82300450E008E1ADD /* Manager */,
+				0175A4F023004D18008E1ADD /* Model */,
+				0175A4FD23005D6F008E1ADD /* Presenter */,
 				0180628A22F75C690062B10F /* Support */,
 				01934C4823001E55005196B7 /* Tools */,
 				01934C3C23000F30005196B7 /* UICollectionView */,
@@ -110,6 +147,7 @@
 				0180627F22F75C550062B10F /* Assets.xcassets */,
 				0180628422F75C550062B10F /* Info.plist */,
 				0180628122F75C550062B10F /* LaunchScreen.storyboard */,
+				0175A4EE23004D13008E1ADD /* ScrollSection.json */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -121,6 +159,7 @@
 				01934C43230012DD005196B7 /* BasicCollectionVC.swift */,
 				01934C4123001104005196B7 /* FakeTableVC.swift */,
 				0180628B22F75C9D0062B10F /* MainVC.swift */,
+				0175A4EC2300480F008E1ADD /* SectionScrollVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -137,6 +176,7 @@
 		01934C3D23000F3C005196B7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0175A4F923005560008E1ADD /* ImageCollectionViewCell.swift */,
 				01934C3E23000F44005196B7 /* TextCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -247,6 +287,7 @@
 			files = (
 				0180628022F75C550062B10F /* Assets.xcassets in Resources */,
 				0180628322F75C550062B10F /* LaunchScreen.storyboard in Resources */,
+				0175A4EF23004D13008E1ADD /* ScrollSection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,15 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0175A4F623004E88008E1ADD /* Api.swift in Sources */,
 				0180627922F75C550062B10F /* AppDelegate.swift in Sources */,
 				01934C4C23001F6B005196B7 /* BaseCollectionVC.swift in Sources */,
 				01934C44230012DD005196B7 /* BasicCollectionVC.swift in Sources */,
 				01934C4723001389005196B7 /* BasicReusableView.swift in Sources */,
+				0175A4F223004DCB008E1ADD /* ContentModel.swift in Sources */,
 				01934C4A23001E65005196B7 /* CVLayout.swift in Sources */,
 				01934C4223001104005196B7 /* FakeTableVC.swift in Sources */,
+				0175A4FA23005560008E1ADD /* ImageCollectionViewCell.swift in Sources */,
 				0180628C22F75C9D0062B10F /* MainVC.swift in Sources */,
 				0175A4E723004498008E1ADD /* MoyaProviderExtension.swift in Sources */,
+				0175A4FF23005D7A008E1ADD /* SectionScrollPresenter.swift in Sources */,
+				0175A4ED2300480F008E1ADD /* SectionScrollVC.swift in Sources */,
 				01934C3F23000F44005196B7 /* TextCollectionViewCell.swift in Sources */,
+				0175A4F423004E67008E1ADD /* Type01Model.swift in Sources */,
+				0175A4F823004FB5008E1ADD /* TypeModel.swift in Sources */,
 				019EC81922FF540E001DB199 /* UICollectionViewExtension.swift in Sources */,
 				0175A4EB23004521008E1ADD /* WebService.swift in Sources */,
 			);

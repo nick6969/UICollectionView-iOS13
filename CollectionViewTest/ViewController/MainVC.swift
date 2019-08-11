@@ -27,11 +27,13 @@ final class MainVC: UIViewController {
         stackView.distribution = .fillEqually
         stackView.addArrangedSubview(tableViewButton)
         stackView.addArrangedSubview(basicButton)
+        stackView.addArrangedSubview(sectionScrollButton)
         return stackView
     }()
     
     private lazy var tableViewButton: UIButton = buttonClourse("fakeTableView")
     private lazy var basicButton: UIButton = buttonClourse("basic collectionview")
+    private lazy var sectionScrollButton: UIButton = buttonClourse("section scroll")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,8 @@ final class MainVC: UIViewController {
             navigationController?.pushViewController(FakeTableVC(), animated: true)
         case basicButton:
             navigationController?.pushViewController(BasicCollectionVC(), animated: true)
+        case sectionScrollButton:
+            navigationController?.pushViewController(SectionScrollVC(), animated: true)
         default:
             break
         }

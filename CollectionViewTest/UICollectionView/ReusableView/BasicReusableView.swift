@@ -27,6 +27,7 @@ final class BasicReusableView: UICollectionReusableView {
     
     private
     func setupUI() {
+        backgroundColor = .white
         addSubview(headerLabel)
         headerLabel.mLay(pin: .init(top: 8, left: 8, bottom: 8, right: 8))
     }
