@@ -53,7 +53,7 @@ final class FakeTableVC: UIViewController {
     }
     
     func setupSnapshot() -> NSDiffableDataSourceSnapshot<Int, Int> {
-        let snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
         let arr = Array(0..<5)
         snapshot.appendSections(arr)
         for aaa in arr {

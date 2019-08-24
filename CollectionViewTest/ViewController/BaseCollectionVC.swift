@@ -46,7 +46,7 @@ class BaseCollectionVC<SectionModelType, CellModelType>: UIViewController where 
     
     private
     func snapshotForCurrentState() -> NSDiffableDataSourceSnapshot<SectionModelType, CellModelType> {
-        let snapost = NSDiffableDataSourceSnapshot<SectionModelType, CellModelType>()
+        var snapost = NSDiffableDataSourceSnapshot<SectionModelType, CellModelType>()
         let sectionIdentifiters = getDataSectionIdentifiters()
         snapost.appendSections(sectionIdentifiters)
         for identifiter in sectionIdentifiters {
